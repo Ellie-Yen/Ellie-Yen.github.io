@@ -1,18 +1,83 @@
 <!DOCTYPE html>
 <style>
-  body {
-    background: #eee;
-    font-family: Helvetica, "Times New Roman", monospace;
-    font-size: 12pt;
-  }
-  h1 {
-    font-size: 25pt;
-    color: #5d6c81;
-  }
-  h2 {
-    font-size: 18pt;
-    color: #5d6c81;
-  }
+    :root {
+        --c_title: LightSlateGray;
+        --c_normal_font: #666666;
+        --c_emphasize_font:CadetBlue;
+        --c_other_font: #999999;
+        --c_border:#aaaaaa;
+        --c_bg: LightCyan;
+        --c_bg_emphasize: LightBlue;
+        --f_normal: Helvetica, "Times New Roman", sans-serif;
+        --f_code: monospace, 'Courier New', Courier ;
+        --s_h1: 25pt;
+        --s_h2: 20pt;
+        --s_h3: 15pt;
+        --s_normal: 12pt;
+        --s_small: 10pt;
+    }
+    body {
+        background: var(--c_bg);
+        font-family: var(--f_normal);
+        font-size: var(--s_normal);
+        line-height: 120%;
+    }
+    h1 {
+        font-size: var(--s_h1);
+        color: var(--c_title);
+    }
+    h2 {
+        font-size: var(--s_h2);
+        color: var(--c_title);
+    }
+    h3 {
+        font-size: var(--s_h3);
+        color: var(--c_title);
+    }
+    a {
+        color: var(--c_emphasize_font);
+        display: block;
+        padding: 0px 2px 0px 2px;
+    }
+    a.hover {
+        background: var(--c_bg_emphasize);
+    }
+    header {
+        display: block;
+        height: 100%;
+        background: var(--c_title);
+        color: var(--c_bg);
+    }
+    header.h1{
+        display: block;
+        margin: 10px;
+        text-align: center;
+        border-bottom: 2px solid var(--c_border);
+    }
+    header.p {
+        display: block;
+        margin: 10px;
+    }
+    .project_table {
+        display: block;
+        padding: 10px;
+    }
+    .project {
+        float:left;
+        display: block;
+        padding: 5px;
+        margin: 5px;
+        border: 1px solid var(--c_border);
+    }
+    .project_preview, .project_intro {
+        display: inline-block;
+        max-height: 250px;
+        max-width: 250px;
+        overflow: scroll;
+    }
+    .project_preview, .project_tags{
+        font-family: var(--f_code);
+    }
 
   
 </style>
@@ -22,21 +87,22 @@
     <title>Welcome to Elie Yen's github website</title>
   </head>
   <body>
-    <h1>Welcome to Elie Yen's github website</h1>
-    <div id = "description">
-      <p>The website is still building.</p>
-    </div>
+    <header>
+        <h1>Welcome to Elie Yen's github website</h1>
+        <p>The website is still building.</p>
+    </header>>
+    
     <main>
-      <!-->project table includes all projects <--->
+      <!--project table includes all projects --->
       <div class = "project_table">
         
-        <!-->project model includes preview, description and link, link is still private
+        <!--project model includes preview, description and link, link is still private
         <div class = "project">
-          <div class = "project_description">
+          <div class = "project_intro">
             <h3 class = "project_name"></h3>
             <a calss = "project_link" href = "" target="_blank"> view code </a>
-            <p> ** description** </p>
-            <div class = "description_footer>
+            <p class = "project_description"> ** description** </p>
+            <div class = "project_tags">
               <span class = "tags"> **anything want to emphasize** </span>
             </div>
           </div>
@@ -44,37 +110,38 @@
             **any content>**
           </div>
         </div>
-        <---------------------------------------------------------->
+        ------------------------------------------------------------>
         
         <div class = "project">
-          <div class = "project_description">
+          <div class = "project_intro">
             <h3 class = "project_name">Christmas tree builder</h3>
             <a calss = "project_link" href = "" target="_blank"> view code </a>
-            <p> ** description** </p>
-            <div class = "description_footer>
+            <p class = "project_description">This program could produce a <i>html</i> code that presents a customized christmas tree with random decorations on it.
+            Just paste on note and save it into .html, or paste on anywhere on your html code. And you will see your beautiful christmas tree. </p>
+            <div class = "project_tags">
               <span class = "tags">Python3</span> <span class = "tags">HTML</span> <span class = "tags">string formatting</span> <span class = "tags">fun</span>
             </div>
           </div>
           <div class = "project_preview">
             <div class = "christmasTree" style =
             "display: block; height : 310px; width: 210px;
-            border: 10px double #697C4a; padding: 5px;
+            border: 10px double DarkOliveGreen; padding: 5px;
             font-size: 10px; text-align: center;">
             <b>&#9670;&#9829;&#8859;&#10047;&#10053; Mery Christmas &#10053;&#10047;&#8859;&#9829;&#9670;<br><br></b>
-              <div class = "ChristmasTreeBody" style = "display: block; vertical-align: middle;">
-                <p class = "ChristmasTreeBody" style = "line-height: 11px; color : #697C4a; font-family: monospace; text-align : center;">
-                <span style = "color : #ffcc00; font-size : 20px;">&#9733;</span><br>
-                <span style = "color : #79b2dd;">*.*<br></span>/|\<br><span style = "color : #f2ca92;">*.*.*<br></span>/<span style = "color : #fcb5d2;">&#9670;</span>|\\<br><span style = "color : #f2ca92;">*.*.*.*<br></span>/<span style = "color : #33b884;">&#8859;</span>/<span style
-                = "color : #fcb5d2;">&#10047;</span>\\\<br><span style = "color : #33b884;">*.*.*.*.*<br></span>/<span style = "color : #fcb5d2;">&#9829;</span>/<span style = "color : #ae8fcd;">&#10053;</span>|\\\\<br><span style = "color : #79b2dd;">*.*.*.*.*.*<br></span>/<span style = "color : #79b2dd;">&#9670;</span>/<span style = "color :
-                #79b2dd;">&#10047;</span>/|\\\\\<br><span style = "color : #33b884;">*.*.*.*.*.*.*<br></span>///<span style = "color : #ae8fcd;">&#10053;</span>/<span style = "color : #33b884;">&#9670;</span>|<span style = "color : #33b884;">&#10047;</span>\\\\\<br><span style = "color : #fcb5d2;">*.*.*.*.*.*.*.*<br></span>/////<span style = "color : #ae8fcd;">&#10047;</span>/<span style = "color : #ae8fcd;">&#9670;</span>\<span style
-                = "color : #ae8fcd;">&#9829;</span>\<span style = "color : #fcb5d2;">&#10053;</span>\\\<br><span style = "color : #ae8fcd;">*.*.*.*.*.*.*.*.*<br></span>/<span style = "color : #f2ca92;">&#10047;</span>/<span style = "color : #fcb5d2;">&#10047;</span>/<span style = "color : #33b884;">&#10047;</span>/<span style = "color : #fcb5d2;">&#9670;</span>|\\\\\\\\<br><span style = "color : #79b2dd;">*.*.*.*.*.*.*.*.*.*<br></span>/////<span style = "color : #f2ca92;">&#10047;</span>/<span style = "color : #79b2dd;">&#9670;</span>/|\\\<span style = "color : #79b2dd;">&#8859;</span>\\\\\<br><span style = "color : #79b2dd;">*.*.*.*.*.*.*.*.*.*.*<br></span>/<span style = "color : #fcb5d2;">&#9670;</span>/<span
-                style = "color : #f2ca92;">&#9670;</span>/////<span style = "color : #fcb5d2;">&#8859;</span>|\\<span style = "color : #fcb5d2;">&#10053;</span>\\\\\\\<br>&#9632;</p>
+              <div class = "ChristmasTreeBody" style = "display: block;">
+                <p class = "ChristmasTreeBody" style = "line-height: 11px; color : DarkOliveGreen; font-family: monospace; text-align : center;">
+                <span style = "color : Orange; font-size : 20px;">&#9733;</span><br>
+                <span style = "color : LightSkyBlue;">*.*<br></span>/|\<br><span style = "color : LightSalmon;">*.*.*<br></span>/<span style = "color : LightCoral;">&#9670;</span>|\\<br><span style = "color : LightSalmon;">*.*.*.*<br></span>/<span style = "color : LightSeaGreen;">&#8859;</span>/<span style
+                = "color : LightCoral;">&#10047;</span>\\\<br><span style = "color : LightSeaGreen;">*.*.*.*.*<br></span>/<span style = "color : LightCoral;">&#9829;</span>/<span style = "color : MediumPurple;">&#10053;</span>|\\\\<br><span style = "color : LightSkyBlue;">*.*.*.*.*.*<br></span>/<span style = "color : LightSkyBlue;">&#9670;</span>/<span style = "color :
+                LightSkyBlue;">&#10047;</span>/|\\\\\<br><span style = "color : LightSeaGreen;">*.*.*.*.*.*.*<br></span>///<span style = "color : MediumPurple;">&#10053;</span>/<span style = "color : LightSeaGreen;">&#9670;</span>|<span style = "color : LightSeaGreen;">&#10047;</span>\\\\\<br><span style = "color : LightCoral;">*.*.*.*.*.*.*.*<br></span>/////<span style = "color : MediumPurple;">&#10047;</span>/<span style = "color : MediumPurple;">&#9670;</span>\<span style
+                = "color : MediumPurple;">&#9829;</span>\<span style = "color : LightCoral;">&#10053;</span>\\\<br><span style = "color : MediumPurple;">*.*.*.*.*.*.*.*.*<br></span>/<span style = "color : LightSalmon;">&#10047;</span>/<span style = "color : LightCoral;">&#10047;</span>/<span style = "color : LightSeaGreen;">&#10047;</span>/<span style = "color : LightCoral;">&#9670;</span>|\\\\\\\\<br><span style = "color : LightSkyBlue;">*.*.*.*.*.*.*.*.*.*<br></span>/////<span style = "color : LightSalmon;">&#10047;</span>/<span style = "color : LightSkyBlue;">&#9670;</span>/|\\\<span style = "color : LightSkyBlue;">&#8859;</span>\\\\\<br><span style = "color : LightSkyBlue;">*.*.*.*.*.*.*.*.*.*.*<br></span>/<span style = "color : LightCoral;">&#9670;</span>/<span
+                style = "color : LightSalmon;">&#9670;</span>/////<span style = "color : LightCoral;">&#8859;</span>|\\<span style = "color : LightCoral;">&#10053;</span>\\\\\\\<br>&#9632;</p>
               </div>
             </div>
 
           </div>
         </div>
-        <!--><---------------------------------------------------------->                                                                                                                                       
+        <!------------------------------------------------------------>                                                                                                                                       
         
       </div>
     </main>
