@@ -1,149 +1,190 @@
 <!DOCTYPE html>
 <style>
     :root {
-        --c_title: LightSlateGray;
-        --c_normal_font: #666666;
-        --c_emphasize_font:CadetBlue;
-        --c_other_font: #999999;
-        --c_border:#aaaaaa;
-        --c_bg: LightCyan;
-        --c_bg_emphasize: LightBlue;
-        --f_normal: Helvetica, "Times New Roman", sans-serif;
-        --f_code: monospace, 'Courier New', Courier ;
-        --s_h1: 25pt;
-        --s_h2: 20pt;
-        --s_h3: 15pt;
-        --s_normal: 12pt;
-        --s_small: 10pt;
+      --c_title: LightSteelBlue;
+      --c_normal_font: #666;
+      --c_other_font: #aaa;
+      --c_reverse_font: #fff;
+      --c_border:#ccc;
+      --f_normal: Helvetica, "Times New Roman", sans-serif;
+      --f_code: monospace, 'Courier New', Courier ;
+      --s_h1: 25pt;
+      --s_h2: 20pt;
+      --s_h3: 15pt;
+      --s_normal: 12pt;
+      --s_small: 10pt;
+      --w: 300px;
+      --h: 400px;
     }
     body {
-        background: var(--c_bg);
-        font-family: var(--f_normal);
-        font-size: var(--s_normal);
-        line-height: 120%;
+      font-family: var(--f_normal);
+      font-size: var(--s_normal);
+      color: var(--c_normal_font);
+      text-align: center;
     }
-    h1 {
-        font-size: var(--s_h1);
-        color: var(--c_title);
+    h1, h2, h3 {
+      color: var(--c_title);
+      letter-spacing: 0.2em;
+      line-height: 120%;
     }
-    h2 {
-        font-size: var(--s_h2);
-        color: var(--c_title);
-    }
-    h3 {
-        font-size: var(--s_h3);
-        color: var(--c_title);
-    }
+    h1 { font-size: var(--s_h1); }
+    h2 { font-size: var(--s_h2); }
+    h3 { font-size: var(--s_h3); }
     a {
-        color: var(--c_emphasize_font);
-        display: block;
-        padding: 0px 2px 0px 2px;
+      text-decoration: none;
+      color: var(--c_title);
     }
-    a.hover {
-        background: var(--c_bg_emphasize);
+    a:hover {
+      color: var(--c_reverse_font);
+      background: var(--c_title);
+    }
+    .footer {
+      border-top: 1px solid var(--c_border);
+      margin: 5px;
+    }
+    [class*="_description"] {
+      text-align: justify;
     }
     header {
-        display: block;
-        height: 100%;
-        background: var(--c_title);
-        color: var(--c_bg);
+      min-height: 350px;
+      background: var(--c_title) url("https://github.com/Elie-Yen/Elie-Yen.github.io/blob/main/banner.jpg?raw=true") no-repeat fixed center 200%;
     }
-    header.h1{
-        display: block;
-        margin: 10px;
-        text-align: center;
-        border-bottom: 2px solid var(--c_border);
+    .header_title > h1, .header_description > p {
+      min-width: var(--w);
+      width: 50%;
+      margin: auto;
+      padding: 30px 0px 30px 0px;
+      color: var(--c_normal_font);
     }
-    header.p {
-        display: block;
-        margin: 10px;
+    .header_description {
+      background: #fff;
+      opacity: 50%;
     }
-    .project_table {
-        display: block;
-        padding: 10px;
-    }
+    /* container of a single project*/
     .project {
-        float:left;
-        display: block;
-        padding: 5px;
-        margin: 5px;
-        border: 1px solid var(--c_border);
+      display: inline-block;
+      min-width: min-content;
+      width: 45%;
+      margin: 5px;
+      border: 1px solid var(--c_border);
+      border-radius: 10px;
     }
-    .project_preview, .project_intro {
-        display: inline-block;
-        max-height: 250px;
-        max-width: 250px;
-        overflow: scroll;
+    @media (max-width: 600px) { .project { width: 100%; }}
+    .project_content_container, .project_title {
+      display: block;
+      margin: 5px;
+    }
+    .project_description {
+      display: block;
+      max-height: var(--h);
+      margin: 5px;
+      overflow-y: auto;
+      border-block: 1px solid var(--c_border);
+    }
+    .project_link, .project_preview {
+      display: inline-block;
+      vertical-align: middle;
+      margin: auto;
+      width: max-content;
+      height: max-content;
+      background: var(--c_title);
+    }
+    .project_link {
+      background: var(--c_title) url("https://github.com/Elie-Yen/Elie-Yen.github.io/blob/main/link_navi.png?raw=true") center no-repeat;
+    }
+    /* mask of preview*/
+    .project_link > a, .project_preview {
+      background: var(--c_reverse_font);
+    }
+    .project_link > a:hover {
+      background: none;
+      opacity: 20%;
     }
     .project_preview, .project_tags{
-        font-family: var(--f_code);
+      font-family: var(--f_code);
     }
-
+    .project_tags > a {
+      color: var(--c_other_font);
+      font-size: var(--s_small);
+      display: inline-block;
+      padding: 2px 16px 2px 16px;
+      border: 1px solid var(--c_border);
+      border-radius: 10px;
+      margin: 3px;
+    }
+    
   
 </style>
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Elie Yen's github website</title>
   </head>
   <body>
-    <header>
-        <h1>Welcome to Elie Yen's github website</h1>
-        <p>The website is still building.</p>
-    </header>>
+    <header id = "header">
+      <div class = header_title>
+        <h1>Elie Yen's projects</h1>
+      </div>
+      <div class = "header_description top_line">
+        <p>Welcome to my github website!<br>
+          Python and C# are my main programming language, besides,
+          I could write some basic syntax of SQL, html, css.
+          Having huge enthusiasm in programming, I've learned data 
+          structure and algorithms like dynamic programming.<br>
+          Here are some of my projects, hope you enjoy them :)</p>
+      </div>
+    </header>
     
     <main>
       <!--project table includes all projects --->
-      <div class = "project_table">
-        
-        <!--project model includes preview, description and link, link is still private
-        <div class = "project">
-          <div class = "project_intro">
-            <h3 class = "project_name"></h3>
-            <a calss = "project_link" href = "" target="_blank"> view code </a>
-            <p class = "project_description"> ** description** </p>
-            <div class = "project_tags">
-              <span class = "tags"> **anything want to emphasize** </span>
-            </div>
-          </div>
-          <div class = "project_preview">
-            **any content>**
-          </div>
-        </div>
-        ------------------------------------------------------------>
-        
-        <div class = "project">
-          <div class = "project_intro">
-            <h3 class = "project_name">Christmas tree builder</h3>
-            <a calss = "project_link" href = "" target="_blank"> view code </a>
-            <p class = "project_description">This program could produce a <i>html</i> code that presents a customized christmas tree with random decorations on it.
-            Just paste on note and save it into .html, or paste on anywhere on your html code. And you will see your beautiful christmas tree. </p>
-            <div class = "project_tags">
-              <span class = "tags">Python3</span> <span class = "tags">HTML</span> <span class = "tags">string formatting</span> <span class = "tags">fun</span>
-            </div>
-          </div>
-          <div class = "project_preview">
-            <div class = "christmasTree" style =
-            "display: block; height : 310px; width: 210px;
-            border: 10px double DarkOliveGreen; padding: 5px;
-            font-size: 10px; text-align: center;">
-            <b>&#9670;&#9829;&#8859;&#10047;&#10053; Mery Christmas &#10053;&#10047;&#8859;&#9829;&#9670;<br><br></b>
-              <div class = "ChristmasTreeBody" style = "display: block;">
-                <p class = "ChristmasTreeBody" style = "line-height: 11px; color : DarkOliveGreen; font-family: monospace; text-align : center;">
-                <span style = "color : Orange; font-size : 20px;">&#9733;</span><br>
-                <span style = "color : LightSkyBlue;">*.*<br></span>/|\<br><span style = "color : LightSalmon;">*.*.*<br></span>/<span style = "color : LightCoral;">&#9670;</span>|\\<br><span style = "color : LightSalmon;">*.*.*.*<br></span>/<span style = "color : LightSeaGreen;">&#8859;</span>/<span style
-                = "color : LightCoral;">&#10047;</span>\\\<br><span style = "color : LightSeaGreen;">*.*.*.*.*<br></span>/<span style = "color : LightCoral;">&#9829;</span>/<span style = "color : MediumPurple;">&#10053;</span>|\\\\<br><span style = "color : LightSkyBlue;">*.*.*.*.*.*<br></span>/<span style = "color : LightSkyBlue;">&#9670;</span>/<span style = "color :
-                LightSkyBlue;">&#10047;</span>/|\\\\\<br><span style = "color : LightSeaGreen;">*.*.*.*.*.*.*<br></span>///<span style = "color : MediumPurple;">&#10053;</span>/<span style = "color : LightSeaGreen;">&#9670;</span>|<span style = "color : LightSeaGreen;">&#10047;</span>\\\\\<br><span style = "color : LightCoral;">*.*.*.*.*.*.*.*<br></span>/////<span style = "color : MediumPurple;">&#10047;</span>/<span style = "color : MediumPurple;">&#9670;</span>\<span style
-                = "color : MediumPurple;">&#9829;</span>\<span style = "color : LightCoral;">&#10053;</span>\\\<br><span style = "color : MediumPurple;">*.*.*.*.*.*.*.*.*<br></span>/<span style = "color : LightSalmon;">&#10047;</span>/<span style = "color : LightCoral;">&#10047;</span>/<span style = "color : LightSeaGreen;">&#10047;</span>/<span style = "color : LightCoral;">&#9670;</span>|\\\\\\\\<br><span style = "color : LightSkyBlue;">*.*.*.*.*.*.*.*.*.*<br></span>/////<span style = "color : LightSalmon;">&#10047;</span>/<span style = "color : LightSkyBlue;">&#9670;</span>/|\\\<span style = "color : LightSkyBlue;">&#8859;</span>\\\\\<br><span style = "color : LightSkyBlue;">*.*.*.*.*.*.*.*.*.*.*<br></span>/<span style = "color : LightCoral;">&#9670;</span>/<span
-                style = "color : LightSalmon;">&#9670;</span>/////<span style = "color : LightCoral;">&#8859;</span>|\\<span style = "color : LightCoral;">&#10053;</span>\\\\\\\<br>&#9632;</p>
-              </div>
-            </div>
+      <div class = "container">
+        <h2>Recently projects</h2>
 
+        <div class = "project">
+          <div class = "project_title">
+            <h3> Christmas tree builder </h3>
+          </div>
+          <div class = "project_content_container">
+            <div class = "project_link">
+              <a href = "">
+                <div class = "project_preview">
+                    <div class = "christmasTree" style =
+                      "display: block; height : 310px; width: 210px;
+                      border: 10px double DarkOliveGreen; padding: 5px;
+                      font-size: 10px; text-align: center;">
+                      <b>&#9670;&#9829;&#8859;&#10047;&#10053; Mery Christmas &#10053;&#10047;&#8859;&#9829;&#9670;<br><br></b>
+                      <div class = "ChristmasTreeBody" style = "display: block;">
+                        <p class = "ChristmasTreeBody" style = "line-height: 11px; color : DarkOliveGreen; font-family: monospace; text-align : center;">
+                        <span style = "color : Orange; font-size : 20px;">&#9733;</span><br>
+                        <span style = "color : LightSkyBlue;">*.*<br></span>/|\<br><span style = "color : LightSalmon;">*.*.*<br></span>/<span style = "color : LightCoral;">&#9670;</span>|\\<br><span style = "color : LightSalmon;">*.*.*.*<br></span>/<span style = "color : LightSeaGreen;">&#8859;</span>/<span style
+                        = "color : LightCoral;">&#10047;</span>\\\<br><span style = "color : LightSeaGreen;">*.*.*.*.*<br></span>/<span style = "color : LightCoral;">&#9829;</span>/<span style = "color : MediumPurple;">&#10053;</span>|\\\\<br><span style = "color : LightSkyBlue;">*.*.*.*.*.*<br></span>/<span style = "color : LightSkyBlue;">&#9670;</span>/<span style = "color :
+                        LightSkyBlue;">&#10047;</span>/|\\\\\<br><span style = "color : LightSeaGreen;">*.*.*.*.*.*.*<br></span>///<span style = "color : MediumPurple;">&#10053;</span>/<span style = "color : LightSeaGreen;">&#9670;</span>|<span style = "color : LightSeaGreen;">&#10047;</span>\\\\\<br><span style = "color : LightCoral;">*.*.*.*.*.*.*.*<br></span>/////<span style = "color : MediumPurple;">&#10047;</span>/<span style = "color : MediumPurple;">&#9670;</span>\<span style
+                        = "color : MediumPurple;">&#9829;</span>\<span style = "color : LightCoral;">&#10053;</span>\\\<br><span style = "color : MediumPurple;">*.*.*.*.*.*.*.*.*<br></span>/<span style = "color : LightSalmon;">&#10047;</span>/<span style = "color : LightCoral;">&#10047;</span>/<span style = "color : LightSeaGreen;">&#10047;</span>/<span style = "color : LightCoral;">&#9670;</span>|\\\\\\\\<br><span style = "color : LightSkyBlue;">*.*.*.*.*.*.*.*.*.*<br></span>/////<span style = "color : LightSalmon;">&#10047;</span>/<span style = "color : LightSkyBlue;">&#9670;</span>/|\\\<span style = "color : LightSkyBlue;">&#8859;</span>\\\\\<br><span style = "color : LightSkyBlue;">*.*.*.*.*.*.*.*.*.*.*<br></span>/<span style = "color : LightCoral;">&#9670;</span>/<span
+                        style = "color : LightSalmon;">&#9670;</span>/////<span style = "color : LightCoral;">&#8859;</span>|\\<span style = "color : LightCoral;">&#10053;</span>\\\\\\\<br>&#9632;</p>
+                      </div>
+                    </div>
+                </div>
+              </a>
+            </div>
+            <div class = "project_description">
+              <p>This program could produce a <b>html</b> code that presents a customized christmas tree with random decorations on it.
+                Just paste on note and save it into .html, or paste on anywhere on your html code. And you will see your beautiful christmas tree.
+              </p>
+            </div>
+            <div class = "project_tags">
+              <a>#Python3</a><a>#HTML</a><a>#string formatting</a><a>#Random</a> 
+            </div>
           </div>
         </div>
-        <!------------------------------------------------------------>                                                                                                                                       
-        
+        <!------------- end of project_n------------>
+
+
       </div>
+      <!------------- end of container------------>
     </main>
   </body>
+  <footer>
+    <div class = "footer"><p><a href = #header>back to top</a></p></div>
+  </footer>
 </html>
