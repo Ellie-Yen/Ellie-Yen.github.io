@@ -1,0 +1,119 @@
+/* stylesheet of Elie Yen's github portfolio by Elie Yen */
+:root {
+  --c_bg: #fff;
+  --c_title: CadetBlue;
+  --c_normal_font: #666;
+  --c_other_font: LightSlateGrey;
+  --c_reverse_font: #fff;
+  --c_border: #aaa;
+  --f_normal: Helvetica, 'Times New Roman', sans-serif;
+  --f_code: monospace, 'Courier New', Courier ;
+  --s_h1: 25pt; --s_h2: 20pt; --s_h3: 15pt;
+  --s_normal: 12pt; --s_small: 10pt;
+  --w: 300px; --h: 400px;
+}
+body {
+  font-family: var(--f_normal);
+  font-size: var(--s_normal);
+  color: var(--c_normal_font);
+  text-align: center;
+  margin: 0; padding: 0;
+}
+.container, .footer, .header, .nav_links, .project_link > a, .project_preview, a .link_icon {
+  /* .project_link > a, .project_preview are mask of preview */
+  background: var(--c_bg);
+}
+.project_link {
+  background: var(--c_title) url("https://github.com/Elie-Yen/Elie-Yen.github.io/blob/main/materials/link_navi.png?raw=true") center no-repeat;
+}
+.nav_ button {
+  background: url("https://github.com/Elie-Yen/Elie-Yen.github.io/blob/main/materials/navi-button.png?raw=true") no-repeat right;
+} 
+body, a:hover { background: var(--c_title); }
+.project_link > a:hover, .btn { background: none; }
+.container, .footer, .header, .my_avatar img { opacity: 80%; }
+.project_link > a:hover { opacity: 33%; }
+
+.link_icon { width: calc(var(--s_normal) * 1.5) }
+ul { list-style: square; }
+span, button { font-weight: bold; }
+h1, h2, h3 { font-weight: normal; letter-spacing: 0.2em; line-height: 120%; }
+h1 { font-size: var(--s_h1); }
+h2 { font-size: var(--s_h2); }
+h3 { font-size: var(--s_h3); }
+.project_tags, .footer p, .nav_links a { font-size: var(--s_small); }
+a, h1, h2, h3{ text-decoration: none; color: var(--c_title); }
+a:hover, .nav_ button { color: var(--c_reverse_font); }
+.btn, .project_preview { color: var(--c_other_font); }
+.project_preview { font-family: var(--f_code); }
+
+.ptb10 { padding: 10px 0px 10px 0px; }
+.ptb5 { padding: 5px 0px 5px 0px; }
+.mb30 { margin: auto auto 30px auto; }
+.mtb10 {margin: 10px auto 10px auto; }
+.mauto { margin: auto; }
+.project_content_container, .project, .project_title { margin: 5px; }
+
+.project_preview, .project_tags, .nav_links { text-align: left; }
+.about_me_content h3 { text-align: center; }
+[class*="_description"] { text-align: justify; }
+
+.dropdown_content { display: none; } /* hide by default */
+.default_show_content, .dropdown_content a, .blk { display: block;}
+a.link_icon, .project_link, .project_preview { display: inline-block; }
+.r1, .r2 { display: inline-table; min-width: var(--w); vertical-align: middle; }
+.flexbox_container {
+  display: flexbox;
+  flex-wrap: wrap;
+  align-content: center;
+  min-width: fit-content;
+}
+.r0 { width: 70%; }
+.r1 { width: 90%; }
+.r2 { width: 45%; }
+@media (max-width: 600px) { .r0, .r1, .r2 { width: 95%; } }
+    
+/* appearance settings in different area */
+.header_title { padding: 50px 0px 50px 0px; }
+.header_title > h1 {
+  min-width: var(--w);
+  width: 50%;
+}
+.topic_container, .nav_links {
+  box-shadow: 2px 10px 15px 2px var(--c_border);
+  z-index: 1;
+}
+.btn { border: none; width: 20px; }
+.topic_container button { margin-left: calc(100% - 30px); }
+
+/* container of a single project*/
+.project {
+  border: 1px solid var(--c_border);
+  border-radius: 10px;
+}
+.project_description {
+  max-height: var(--h);
+  overflow-y: auto;
+  border-block: 1px solid var(--c_border);
+}
+.project_link, .project_preview {
+  vertical-align: middle;
+  max-width: var(--w);
+  width: max-content;
+  height: max-content;
+  overflow-wrap: break-word;
+}
+.nav_container {
+  position: fixed;
+  top: 0px; right: 5px;
+  width: 200px;
+}
+.nav_ button {
+  width: 30px;
+  height: 30px;
+  margin-left: 170px;
+} 
+.nav_links a {width: 190px; padding: 10px 5px 10px 5px; }
+
+/* new vision*/
+.my_avatar{ padding: 10px 30px 10px 30px; }

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://github.com/Elie-Yen/Elie-Yen.github.io/blob/main/icon/me_icon_transColor_small.png?raw=true" type="image/x-icon">
+    <title>Elie Yen</title>
+  </head>
+  <link rel="stylesheet" href="stylesheet_1.css">
+  <body>
+    <header id = "header" class = "header">
+      <div class = "header_title">
+        <h1 class = "mauto">Elie Yen's projects</h1>
+      </div>
+    </header>
+    <main>
+      <!-- container includes all topics --->
+      <div class = "container ptb10 flexbox_container">
+        
+        <div id = "about_me" class= "about_me topic_container r0 ptb10 mb30 ">
+          <button id = "about_me_btn" class = "btn" onclick= "switch_show('about_me_') ">+</button>
+          <h2 class = "topic_name r1">― About Me ―</h2>
+          <div id = "about_me_content" class = "about_me_content dropdown_content">
+            <div class = "my_intro about_me_topic flexbox_container">
+              <div class = "about_me_title"></div>
+              <div class = "my_intro_description ptb5 r1">
+                <table>
+                  <tbody>
+                    <td class = "my_avatar">
+                      <img src = "https://github.com/Elie-Yen/Elie-Yen.github.io/blob/main/icon/me_icon_transColor.png?raw=true" alt = "Elie Yen's avatar">
+                      <h3>Elie Yen</h3>
+                    </td>
+                    <td>
+                      <p>
+                        Hi, nice to meet you! I was a marketing executive and product developer in FMCG.<br> I always keen on learning new things.
+                        With a huge enthusiasm for programming, I decided to be a self-taught programmer.<br> 
+                        My career goal is to publish useful business tools that benefit enterprises' growth.
+                        <br>I'm looking for opportunities for junior software developer / data scientist. Please feel free to contact me.
+                      </p>  
+                      <p><span>Contact Me:</span>
+                        <a class ="link_icon" href = "https://www.linkedin.com/in/elieyen" target="blank"><img class ="link_icon" src = "https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg"></a>
+                        <a class ="link_icon" href = "https://github.com/Elie-Yen" target="blank"><img class ="link_icon" src = "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"></a>
+                      </p>
+                    </td>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class = "my_skills about_me_topic flexbox_container">
+              <div class = "about_me_title"><h3>Skills</h3></div>
+              <p class = "about_me_description ptb5 r1">
+                <span>Programming language : </span>Python, C# (also some basic syntax of SQL, html, css).<br>
+                <span>Libs : </span>Numpy, Pandas, Matplotlib, BeautifulSoup<br>
+                <span>Knowledge : </span><br>DS: common collections,queue, stack, heap, binary tree, BST(binary search tree), AVL(self-balanced BST), N-ary tree, tries,BIT(binary indexed tree, Fenwick tree)<br>AL: bfs(breath-first search), dfs(depth-first search), recursion, backtracking, DP(dynamic programming),binary search, merge sort, quick selection, linear search.<br>
+                <span>Language : </span>English, Chinese.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!------------- end of about_me------------>
+
+        <div id = "category1" class = "project_category_container topic_container r0 ptb10 mb30">
+          <button id = "category1_btn" class = "btn" onclick= "switch_show('category1_') ">-</button>
+          <h2 class = "topic_name r2">― C# ―</h2>
+          <div id = "category1_content" class = "project_category_content default_show_content ptb5">
+            
+            <div class = "project r2">
+              <div class = "project_title blk"><h3>Shape Calculator</h3></div>
+              <div class = "project_content_container blk">
+  
+                <div class = "project_link mauto">
+                  <a href= "https://github.com/Elie-Yen/demo_project/tree/master/Math/shape_calculator" target="blank">
+                    <div class = "project_preview mauto">
+                      <div class = "example" style = "display: container; width: 300px; height: 260px;">
+                        <img class = "demo_pic" style = "width: 300px; object-fit: scale-down;"
+                            src= "https://github.com/Elie-Yen/demo_project/raw/master/Math/shape_calculator/demo_shapebuilder.png?raw=true"
+                            alt= "demo of shape calculator">
+                      </div>
+                    </div>
+                  </a>
+                </div>
+  
+                <div class = "project_description blk mtb10"><p>
+                  Support build common shapes :
+                  quadrilateral, parallelogram, rhombus, square, rectangle, kite, triangle, circle, regular polygon
+                  and set by coordinates.
+                  <br>With required and correct arguments, it could calculate unknown area, perimeter and other infos.
+                  The <i>LeastCompleteShapetoFill</i> method could calculates the least number of certain shapes to fill a w * h area considering the direction.
+                </p></div>
+                <div class = "project_tags">
+                  <em>#C# #string_formatting #math</em>
+                </div>
+              </div>
+            </div><!------------- end of shape_calculator------------>
+            <div class = "project r2">
+              <div class = "project_title blk"><h3>BST Builder</h3></div>
+              <div class = "project_content_container blk">
+
+                <div class = "project_link mauto">
+                  <a href= "https://github.com/Elie-Yen/demo_project/tree/master/Other/bst_builder" target="blank">
+                    <div class = "project_preview mauto">
+
+                      <div class = "example" style = "display: container; width: 300px; height: 260px;">
+                            <img class = "demo_pic" style = "width: 300px; object-fit: scale-down;"
+                                src= "https://github.com/Elie-Yen/demo_project/blob/master/Other/bst_builder/demo_BST_ani.gif?raw=true"
+                                alt= "demo of bst_builder">
+                      </div>
+
+                    </div>
+                  </a>
+                </div>
+
+                <div class = "project_description blk mtb10">
+                  <p>
+                  This program support building a valid BST by an int array or a specific formatted string, common methods including <i>insert, delete, valid, contains(value), in/pre/post/level-order traversal(output by string or array)</i> and height/ count properties.
+                  <br>Furthermore, in order to optimized searching and traversal, it's build as an AVL.
+                </p>
+                </div>
+                <div class = "project_tags">
+                  <em>#C# #DS #BST #AVL #recursion #serializer #deserializer #other</em>
+                </div>
+              </div>
+            </div><!-------------end of BST_builder------------>
+            <div class = "project r2">
+              <div class = "project_title blk"><h3>Hamming Number Generator</h3></div>
+              <div class = "project_content_container blk">
+
+                <div class = "project_link mauto">
+                  <a href= "https://github.com/Elie-Yen/demo_project/tree/master/Math#hamming-number-generator" target="blank">
+                    <div class = "project_preview mauto">
+
+                      <div class = "demo_hm_number" style = "width: 300px; font-size: 10pt;">
+                        <p>
+                          // Produce 1500th hamming number<br>
+                          <span style="opacity: 50%; ">>> int ex = HammingNumber.GenerateKthNum(1500);<br>
+                          >> HammingNumber.Decompose(ex);</span><br>
+                          859963392 = 2<sup>17</sup> * 3<sup>8</sup> * 5<sup>0</sup><br>
+                          <br>// Valid<br>
+                          <span style="opacity: 50%; ">>> HammingNumber.Valid(ex + 1)<br></span>false
+                        </p>
+                      </div>
+
+                    </div>
+                  </a>
+                </div>
+
+                <div class = "project_description blk mtb10">
+                  <p>
+                    Regular numbers are the numbers whose only prime divisors are 2, 3, and 5, In computer science, regular numbers are often called Hamming numbers.
+                    A program contains functions of generate the kth hamming number (or list), validation of hamming number, and
+                    hamming number decomposition (n = 2<sup>i</sup> * 3<sup>j</sup> * 5<sup>k</sup>)  (in a specific field that the hamming number less than 2<sup>31</sup>).
+                  </p>
+                </div>
+                <div class = "project_tags">
+                  <em>#C# #merge_sort #sequence #math</em>
+                </div>
+              </div>
+            </div><!-------------end of Hamming_number_generator------------>
+            <div class = "project r2">
+              <div class = "project_title blk"><h3>Password Generator</h3></div>
+              <div class = "project_content_container blk">
+  
+                <div class = "project_link mauto">
+                  <a href = "https://github.com/Elie-Yen/demo_project/tree/master/Math#password-generatorc" target="blank">
+                    <div class = "project_preview mauto">
+                      <p><span style="opacity: 50%;">>> var ex = new Password();<br>>> ex.length = 25;<br>>> ex.symbol = true;<br>>> ex.other = "➌✿";
+                      </span><br><br>// results:<br>➌6yH1a@I0f9'4➌K.;➌➌O✿*h<br>7=Ek_aE+8B,➌✿➌Wb➌S9py8➌6~<br>➌6T77/]As+➌a/r➌oC✿9R5v&O✿</p>
+                    </div>
+                  </a>
+                </div>
+  
+                <div class = "project_description blk mtb10">
+                  <p>
+                    In order to meet complexity requirements of different websites, this program is
+                    designed to generate a password that has a customized length (6 - 100) and made by required character sets (
+                    lowercases, uppercases, digits, space, symbols (non-alphanumeric) and customized characters (unicode)).
+                    <br>You can also set a number of permutation time to make it more difficult to reproduce the password.
+                  </p>
+                </div>
+                <div class = "project_tags">
+                  <em>#C# #random #factoradic_representation #string #unicode #math</em>
+                </div>
+              </div>
+            </div><!------------- end of project_password_generator------------>
+            <div class = "project r2">
+              <div class = "project_title blk"><h3>Sum Of Dices</h3></div>
+              <div class = "project_content_container blk">
+
+                <div class = "project_link mauto">
+                  <a href= "https://github.com/Elie-Yen/demo_project/tree/master/Math/sum_of_dices" target="blank">
+                    <div class = "project_preview mauto">
+
+                      <div class = "example">
+                        <p>
+                          // get the distribution of sums made by 3 * dices(6 faces)<br>
+                          <span style="opacity: 50%;">>> int face = 6;<br>
+                          >> int num = 3;<br>
+                          >> int[] distribution = SumDices.Distribution(face, num);</span><br>
+                          [0,0,0,1,3,6,10,15,21,25,27,27,25,21,15,10,6,3,1]<br><br>
+                          // count ways to achieve sum = 12 by 3 * dices(6 faces)<br>
+                          <span style="opacity: 50%;">>> int sum = 12;<br>
+                          >> int ways = SumDices.Ways(sum, face, num);</span><br>
+                          25 ways
+                        </p>
+                      </div>
+
+                    </div>
+                  </a>
+                </div>
+
+                <div class = "project_description blk mtb10">
+                  <p>
+                    This program could calculate the distribution of and ways to achieve different sum of points when rolling n dices(m faces).
+                    The result could be used in real-world experiments.
+                  </p>
+                </div>
+                <div class = "project_tags">
+                  <em>#C# #DP #combination #math</em>
+                </div>
+              </div>
+            </div><!-------------end of sum_of_dices------------>
+            <div class = "project r2">
+              <div class = "project_title blk"><h3>Coin Combination</h3></div>
+              <div class = "project_content_container blk">
+
+                <div class = "project_link mauto">
+                  <a href= "https://github.com/Elie-Yen/demo_project/tree/master/Math/coin_combination" target="blank">
+                    <div class = "project_preview mauto">
+
+                      <div class = "example" style = "display: container; width: 300px; height: 190px;">
+                        <img class = "demo_pic" style = "width: 300px; object-fit: scale-down"
+                            src= "https://github.com/Elie-Yen/demo_project/blob/master/Math/coin_combination/demo_coin_combination.png?raw=true"
+                            alt= "demo of coin_combination">
+                      </div>
+                    </div>
+
+                  </a>
+                </div>
+
+                <div class = "project_description blk mtb10">
+                  <p>
+                    This program consists of 2 functions: WayofSum and BuyWithChange.
+                    WayofSum could calculate the ways to achieve target sum and is an overloaded method with 2 input forms: one has constraints of the amount of each coin, the other does not.
+                    Based on the kinds of coins and amount of them, BuyWithChange would tell you the prices
+                    which are affordable but you will get change.
+                  </p>
+                </div>
+                <div class = "project_tags">
+                  <em>#C# #DP #BFS #combination #polymorphism #math</em>
+                </div>
+              </div>
+            </div><!-------------end of coin_combination------------>
+            
+          </div>
+        </div>
+        <!------------- end of category_1------------>
+
+        <div id = "category2" class = "project_category_container topic_container r0 ptb10 mb30">
+          <button id = "category2_btn" class = "btn" onclick= "switch_show('category2_') ">-</button>
+          <h2 class = "topic_name r2">― Python ―</h2>
+          <div id = "category2_content" class = "project_category_content default_show_content ptb5">
+
+            <div class = "project r2">
+              <div class = "project_title blk"><h3>Budget Recorder</h3></div>
+              <div class = "project_content_container blk">
+
+                <div class = "project_link mauto">
+                  <a href= "https://github.com/Elie-Yen/demo_project/tree/master/Other/budget_recorder" target="blank">
+                    <div class = "project_preview mauto">
+
+                      <div class = "example" style = "display: container; width: 300px; height: 260px; text-align: center; ">
+                            <img class = "demo_pic" style = "height: 130px; object-fit: scale-down;"
+                                src= "https://github.com/Elie-Yen/demo_project/blob/master/Other/budget_recorder/Figure_1.png?raw=true"
+                                alt= "demo of budget recorder 1">
+                            <img class = "demo_pic" style = "height: 130px; object-fit: scale-down;"
+                                src= "https://github.com/Elie-Yen/demo_project/blob/master/Other/budget_recorder/Figure_2.png?raw=true"
+                                alt= "demo of budget recorder 2">
+                      </div>
+
+                    </div>
+                  </a>
+                </div>
+
+                <div class = "project_description blk mtb10">
+                  <p>A Budget class which is able to create different categories and supports multiple methods: spend_record, deposit, get_balance and export to csv .
+                    Another Analyze class takes a Budget object as
+                    an argument, its methods would analyze data of
+                    a specific period of time and produce charts to let you better know your financial condition.
+                  </p>
+                </div>
+                <div class = "project_tags">
+                  <em>#Python3 #data_analysis #numpy #pandas #matplotlib #other</em>
+                </div>
+              </div>
+            </div><!-------------end of budget_recorder------------>
+            <div class = "project r2">
+              <div class = "project_title blk"><h3>Possibility Calculator</h3></div>
+              <div class = "project_content_container blk">
+
+                <div class = "project_link mauto">
+                  <a href= "https://github.com/Elie-Yen/demo_project/tree/master/Math/possibility_calculator" target="blank">
+                    <div class = "project_preview mauto">
+
+                      <div class = "example" style = "display: container; width: 300px; height: 260px;">
+                            <img class = "demo_pic" style = "width: 300px; object-fit: scale-down;"
+                                src= "https://github.com/Elie-Yen/demo_project/raw/master/Math/possibility_calculator/demo_possibility_cal_hatwithseed_Figure_1.png"
+                                    alt= "demo of possibility calculator">
+                      </div>
+
+                    </div>
+                  </a>
+                </div>
+
+                <div class = "project_description blk mtb10">
+                  <p>
+                    The program consists of two modes. In Hat mode, you'll put balls with 5 different amounts and colors, and it will calculate the possibility of occurrence of specific combination (draw without replacement). In Dice mode, it'd calculate the possibility of the sum of points equals x when rolling n dices(m-sides) in each time. Both will print a statistical chart.
+                  </p>
+                </div>
+                <div class = "project_tags">
+                  <em>#Python3 #numpy #pandas #matplotlib #random #data_analysis #math</em>
+                </div>
+              </div>
+            </div><!-------------end of possibility_calculator------------>
+            <div class = "project r2">
+              <div class = "project_title blk">
+                <h3> Christmas Tree Builder </h3>
+              </div>
+              <div class = "project_content_container blk">
+                <div class = "project_link mauto">
+                  <a href = "https://github.com/Elie-Yen/demo_project/tree/master/Other#chrismas-tree-builder" target="blank">
+                    <div class = "project_preview mauto">
+                      <div class = "christmasTree" style =
+                        "display: block; padding: 5px;
+                        font-size: 10px; text-align: center;"><p>&#9670;&#9829;&#8859;&#10047;&#10053; Mery
+                        Christmas &#10053;&#10047;&#8859;&#9829;&#9670;<br></p><div class = "ChristmasTreeBody" style = "display: block">
+                        <p class = "ChristmasTreeBody" style = "line-height: 11px; color : DarkOliveGreen; font-family: monospace; text-align : center;">
+                        <span style = "color : Orange; font-size : 20px;">&#9733;
+                        </span><br>
+                        <span style = "color : LightSkyBlue;">*.*<br></span>/|\<br><span style = "color : LightCoral;">*.*.*<br></span>/<span style = "color : LightSalmon;">&#9829;</span>|\\<br><span style = "color : LightSkyBlue;">*.*.*.*<br></span>/<span style = "color : MediumPurple;">&#8859;</span>/<span style = "color : LightSkyBlue;">&#8859;</span>\\\<br><span style = "color : LightSeaGreen;">*.*.*.*.*<br></span>///<span style = "color : MediumPurple;">&#10053;</span>|<span style = "color : LightSeaGreen;">&#9670;</span>\\\<br><span style = "color : LightSeaGreen;">*.*.*.*.*.*<br></span>/<span style = "color : LightCoral;">&#9670;</span>///|\<span style = "color : LightSkyBlue;">&#8859;</span>\\\<br><span style = "color : MediumPurple;">*.*.*.*.*.*.*<br></span>/<span style = "color : LightSkyBlue;">&#8859;</span>/<span style = "color : LightSkyBlue;">&#10053;</span>//|<span style = "color : LightCoral;">&#10047;</span>\<span style = "color : MediumPurple;">&#10053;</span>\\\<br><span style = "color
+                        : LightSeaGreen;">*.*.*.*.*.*.*.*<br></span>/////<span style = "color : MediumPurple;">&#8859;</span>/<span style = "color : MediumPurple;">&#8859;</span>\<span style = "color : LightCoral;">&#8859;</span>\<span style = "color : LightSalmon;">&#9829;</span>\\\<br><span style = "color : LightCoral;">*.*.*.*.*.*.*.*.*<br></span>/<span style = "color : LightSalmon;">&#10047;</span>//////|<span style = "color : LightCoral;">&#9670;</span>\<span style = "color : MediumPurple;">&#10047;</span>\<span style = "color : LightCoral;">&#10047;</span>\\\<br><span style = "color : MediumPurple;">*.*.*.*.*.*.*.*.*.*<br></span>///<span style = "color : LightCoral;">&#9829;</span>/<span style = "color : LightCoral;">&#8859;</span>/<span style = "color : LightCoral;">&#10053;</span>/<span style = "color : LightSeaGreen;">&#8859;</span>\\\<span style = "color : LightSeaGreen;">&#8859;</span>\\\\\<br><span style = "color : LightCoral;">*.*.*.*.*.*.*.*.*.*.*<br></span>///<span style = "color : MediumPurple;">&#9829;</span>//////|\\<span style = "color : LightSeaGreen;">&#9829;</span>\\\\\\\<br>&#9632;</p></div></div>
+                    </div>
+                  </a>
+                </div>
+                <div class = "project_description blk mtb10">
+                  <p>This program could produce a html code that presents a customized christmas tree with random decorations on it.
+                    Just paste on note and save it into .html, or paste on anywhere on your html code. And you will see your beautiful christmas tree.
+                  </p>
+                </div>
+                <div class = "project_tags">
+                  <em>#Python3 #HTML #string #unicode #random #other</em> 
+                </div>
+              </div>
+            </div><!------------- end of christmasTree_builder------------>
+            <div class = "project r2">
+              <div class = "project_title blk"><h3>Conway's Game of Life</h3></div>
+              <div class = "project_content_container blk">
+
+                <div class = "project_link mauto">
+                  <a href= "https://github.com/Elie-Yen/demo_project/blob/master/Game/conway_game" target="blank">
+                    <div class = "project_preview mauto">
+
+                      <div class = "example" style = "display: container; width: 300px; height: 260px;">
+                        <img class = "demo_pic" style = "width: 300px; object-fit: scale-down;"
+                            src= "https://github.com/Elie-Yen/demo_project/blob/master/Game/conway_game/demo_conway_game.gif?raw=true"
+                                alt= "demo of conway_game">
+                      </div>
+
+                    </div>
+                  </a>
+                </div>
+
+                <div class = "project_description blk mtb10">
+                  <p>
+                    This program is design to calculate the state after few generations by giving the primary state. Consider the infinite space, instead of showing fixed scope that contains empty rows/ cols or not includes all live cells, the program is able
+                    to show all live cells in the minimum scope.
+                  </p>
+                </div>
+                <div class = "project_tags">
+                  <em>#Python3 #numpy #2Darray #game</em>
+                </div>
+              </div>
+            </div><!-------------end of Conway's_game_of_life------------>
+            <div class = "project r2">
+              <div class = "project_title blk"><h3>Sudoku Solver</h3></div>
+              <div class = "project_content_container blk">
+
+                <div class = "project_link mauto">
+                  <a href= "https://github.com/Elie-Yen/demo_project/tree/master/Game/sudoku" target="blank">
+                    <div class = "project_preview mauto">
+
+                      <div class = "example" style="font-size: 20px;">
+                        <p>
+                          1 <span style= "opacity: 50%;">8 9 2</span> 5 6 4 7 <span style= "opacity: 50%;">3</span><br>
+                          <span style= "opacity: 50%;">5 4</span> 3 <span style= "opacity: 50%;">7 8</span> 1 9 6 2<br>
+                          7 6 <span style= "opacity: 50%;">2 4 9 3 1</span> 8 5<br>
+                          <span style= "opacity: 50%;">4 2</span> 6 5 1 8 7 3 <span style= "opacity: 50%;">9</span><br>
+                          <span style= "opacity: 50%;">3</span> 7 8 <span style= "opacity: 50%;">6</span> 2 9 5 4 <span style= "opacity: 50%;">1</span><br>
+                          9 <span style= "opacity: 50%;">5 1</span> 3 7 <span style= "opacity: 50%;">4</span> 6 <span style= "opacity: 50%;">2 8</span><br>
+                          <span style= "opacity: 50%;">8</span> 3 <span style= "opacity: 50%;">7 1</span> 6 <span style= "opacity: 50%;">5 2 9 4</span><br>
+                          2 <span style= "opacity: 50%;">1 4 9</span> 3 7 8 5 6<br>
+                          6 <span style= "opacity: 50%;">9 5</span> 8 4 2 3 1 <span style= "opacity: 50%;">7</span><br>
+                        </p>
+                      </div>
+
+                    </div>
+                  </a>
+                </div>
+
+                <div class = "project_description blk mtb10">
+                  <p>
+                    Sudoku is a logic-based,  combinatorial number-placement puzzle. In classic sudoku, the objective is to fill a 9×9 grid with digits so that each column, each row, and each of the nine 3×3 subgrids that compose the grid contain all of the digits from 1 to 9. (cite: <a href = "https://en.wikipedia.org/wiki/Sudoku" target = "blank">Wiki</a>)
+                    The program contains Solver, Creator and Validator of Sudoku.
+                    Use backtracking to try different combinations (in-place modify) until reaching the answer.
+                </p>
+                </div>
+                <div class = "project_tags">
+                  <em>#Python3 #backtracking #random #2Darray #game</em>
+                </div>
+              </div>
+            </div><!-------------end of sudoku_solver------------>
+            <div class = "project r2">
+              <div class = "project_title blk"><h3>Tic-Tac-Toe Game</h3></div>
+              <div class = "project_content_container blk">
+
+                <div class = "project_link mauto">
+                  <a href= "https://github.com/Elie-Yen/demo_project/tree/master/Game/tic_tac_toe_game" target="blank">
+                    <div class = "project_preview mauto">
+                      
+                      <div class = "example" style = "display: container; width: 300px; height: 260px;">
+                        <img class = "demo_pic" style = "width: 300px; object-fit: scale-down;"
+                            src= "https://github.com/Elie-Yen/demo_project/raw/master/Game/tic_tac_toe_game/demo_tic_tac_toe.gif?raw=true"
+                                alt= "demo of tic tac toe game">
+                      </div>
+
+                    </div>
+                  </a>
+                </div>
+
+                <div class = "project_description blk mtb10"><p>
+                  An interactive game that the player can challenge the computer with 3 levels: easy, mid and master, also available to choose who plays first and end the game at any time. It would automatically compute who wins
+                  the game this time and restart the game if the player wants to play again. Once the player ends it, a statistic of how many games the player has won/ lose/ draw would show up on the screen.
+                </p></div>
+                <div class = "project_tags">
+                  <em>#Python3 #numpy #random #2Darray #game</em>
+                </div>
+              </div>
+            </div><!------------- end of tictactoe_game------------>
+
+          </div>
+        </div>
+        <!------------- end of category_2------------>
+        
+      </div>
+      <!------------- end of container------------>
+    </main>
+    <nav id ="navigation">
+      <div class = "nav_container flexbox_container">
+        <div class="nav_ dropdown ptb5">
+          <button id = "nav_btn" class = "btn" onclick= "switch_show('nav_') ">+</button>
+          <div id ="nav_content" class="nav_links dropdown_content">
+            <a id = "demo_home" href = "https://github.com/Elie-Yen/demo_project" target="blank">view all codes</a>
+            <a href = "https://github.com/Elie-Yen/demo_project/tree/master/Math" target="blank">category: math</a>
+            <a href = "https://github.com/Elie-Yen/demo_project/tree/master/Game" target="blank">category: game</a>
+            <a href = "https://github.com/Elie-Yen/demo_project/tree/master/Other" target="blank">category: other</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <script src="elie_yen_portfolio.js"></script>
+  </body>
+  
+  
+  <footer>
+    <div class = "footer ptb5">
+      <p><a href = #header>back to top</a>  © Elie Yen</p>
+    </div>
+  </footer>
+</html>
