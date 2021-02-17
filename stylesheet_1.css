@@ -19,16 +19,13 @@ body {
   text-align: center;
   margin: 0; padding: 0;
 }
-.container, .footer, .header, .nav_links, .project_link > a, .project_preview, a .link_icon {
+.container, .footer, .header, .project_link > a, .project_preview, a .link_icon, .nav_container {
   /* .project_link > a, .project_preview are mask of preview */
   background: var(--c_bg);
 }
 .project_link {
   background: var(--c_title) url("https://github.com/Elie-Yen/Elie-Yen.github.io/blob/main/materials/link_navi.png?raw=true") center no-repeat;
 }
-.nav_ button {
-  background: url("https://github.com/Elie-Yen/Elie-Yen.github.io/blob/main/materials/navi-button.png?raw=true") no-repeat right;
-} 
 body, a:hover { background: var(--c_title); }
 .project_link > a:hover, .btn { background: none; }
 .container, .footer, .header, .my_avatar img { opacity: 80%; }
@@ -43,7 +40,7 @@ h2 { font-size: var(--s_h2); }
 h3 { font-size: var(--s_h3); }
 .project_tags, .footer p, .nav_links a { font-size: var(--s_small); }
 a, h1, h2, h3{ text-decoration: none; color: var(--c_title); }
-a:hover, .nav_ button { color: var(--c_reverse_font); }
+a:hover { color: var(--c_reverse_font); }
 .btn, .project_preview { color: var(--c_other_font); }
 .project_preview { font-family: var(--f_code); }
 
@@ -55,7 +52,7 @@ a:hover, .nav_ button { color: var(--c_reverse_font); }
 .project_content_container, .project, .project_title { margin: 5px; }
 
 .project_preview, .project_tags, .nav_links { text-align: left; }
-.about_me_content h3 { text-align: center; }
+.my_avatar{ text-align: center; }
 [class*="_description"] { text-align: justify; }
 
 .dropdown_content { display: none; } /* hide by default */
@@ -79,7 +76,7 @@ a.link_icon, .project_link, .project_preview { display: inline-block; }
   min-width: var(--w);
   width: 50%;
 }
-.topic_container, .nav_links {
+.topic_container, .nav_container {
   box-shadow: 2px 10px 15px 2px var(--c_border);
   z-index: 1;
 }
@@ -105,15 +102,7 @@ a.link_icon, .project_link, .project_preview { display: inline-block; }
 }
 .nav_container {
   position: fixed;
-  top: 0px; right: 5px;
-  width: 200px;
+  top: 0px; left: 5px;
+  width: 70px;
 }
-.nav_ button {
-  width: 30px;
-  height: 30px;
-  margin-left: 170px;
-} 
-.nav_links a {width: 190px; padding: 10px 5px 10px 5px; }
-
-/* new vision*/
-.my_avatar{ padding: 10px 30px 10px 30px; }
+.nav_links a { width: 60px; padding: 10px 5px 10px 5px; }
