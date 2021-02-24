@@ -1,3 +1,3 @@
 ## Hello, welcome!
-This is my personal website [link](https://elie-yen.github.io/).
+This is my personal website [link](https://ellie-yen.github.io/).
 Hope you enjoy it!
