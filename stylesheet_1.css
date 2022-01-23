@@ -22,7 +22,7 @@ body {
 .project_link {
   background: var(--c_main1) url("https://github.com/Elie-Yen/Elie-Yen.github.io/blob/main/materials/link_navi.png?raw=true") center no-repeat;
 }
-body, a:hover, .btn:hover, .nav_links a:hover { background: linear-gradient(var(--c_main1), var(--c_bg)); }
+body, a:hover, .btn:hover, .nav_links a:hover { background: linear-gradient(135deg, var(--c_main1), var(--c_bg)); }
 /* .project_link > a, .project_preview are mask of preview */
 .container, .footer, .header, .project_link a, .project_preview, a .link_icon, .nav_links a { background: var(--c_reverse_font); }
 .btn { background: var(--c_bg); }
@@ -91,6 +91,7 @@ a.link_icon, .project_link, .project_preview { display: inline-block; }
 }
 .topic_container button { margin-left: calc(100% - 40px); }
 .nav_container button {
+  transform: scale(1.5);
   margin-right: calc(100% - 50px);
   box-shadow: 0px 3px 5px 0px var(--c_main2);
   z-index: 1;
@@ -112,3 +113,5 @@ a.link_icon, .project_link, .project_preview { display: inline-block; }
   top: 5px;
 }
 .nav_links a { padding: 10px 5px 10px 5px; }
+
+
