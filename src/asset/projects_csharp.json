@@ -1,0 +1,22 @@
+[
+	{
+		"name": "BST builder, serializer and deserializer",
+		"photos": [
+			{
+				"url": "https://github.com/Ellie-Yen/CSharp-bst-builder/raw/main/demo/demo_bst_1.png",
+				"alt": "result of serialization by invalid input"
+			},
+			{
+				"url": "https://github.com/Ellie-Yen/CSharp-bst-builder/raw/main/demo/demo_BST_ani.gif",
+				"alt": "visiualize of operations"
+			}
+		],
+		"links": {
+			"code": "https://github.com/Ellie-Yen/CSharp-bst-builder"
+		},
+		"tags": [
+			"bst", "serializer", "deserializer"
+		],
+		"intro": "This program support building a valid BST by an int array or a specific formatted string, common methods including insertion, deletion, validation, contains(value), in/pre/post/level-order traversal(output by string or array) and height/ count properties. Furthermore, in order to optimized searching and traversal, it's build as an AVL."
+	}
+]

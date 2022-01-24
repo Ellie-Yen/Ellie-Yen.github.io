@@ -1,0 +1,30 @@
+{
+	"name": "Hi! I'm Ellie Yen.",
+	"intro": "A front end developer with digital marketing experience & insights, base in Taiwan.",
+	"title": {
+		"regular": [
+			"Let's" ,"websites", "&", "fullfill", "visions."
+		],
+		"shadow": [
+			"fullfill", "your", "visions."
+		],
+		"special": [
+			"elevate", "charmingly"
+		],
+		"identity": [
+			"aesthetic",
+			"engaging",
+			"passionate"
+		]
+	},
+	"links": [
+		{
+			"name": "Github",
+			"url": "https://github.com/Ellie-Yen"
+		},
+		{
+			"name": "Linkedin",
+			"url": "https://www.linkedin.com/in/Ellieyen"
+		}
+	]
+}

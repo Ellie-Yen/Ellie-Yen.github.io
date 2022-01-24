@@ -1,0 +1,24 @@
+{
+  "title": {
+		"regular": [
+			"can", "I", "?"
+		],
+		"special": [
+			"What", "offer"
+		]
+  },
+  "content": [
+    {
+      "summary": "Learn & adapt, resiliently.",
+      "description": "Strong motivation to learn and use new technologies."
+    },
+    {
+      "summary": "Write codes, efficiently.",
+      "description": "Possess knowledge of algorithms & data structure. Have good programming habits."
+    },
+    {
+      "summary": "Build products, attractively.",
+      "description": "As a product developer/ marketing in FMCG field, I'm good at creating impressive contents."
+    }
+  ]
+}

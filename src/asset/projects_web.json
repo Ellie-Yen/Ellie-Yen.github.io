@@ -1,0 +1,75 @@
+[
+	{
+		"name": "Schedule with weather",
+		"photos": [
+			{
+				"url": "https://github.com/Ellie-Yen/schedule-with-weather/raw/main/demo/schedule_and_weather_demo_desktop.jpg",
+				"alt": "demo on desktop"
+			},
+			{
+				"url": "https://github.com/Ellie-Yen/schedule-with-weather/raw/main/demo/schedule_and_weather_demo_iphone678plus.jpg",
+				"alt": "demo on mobile(iphone)"
+			},
+			{
+				"url": "https://github.com/Ellie-Yen/schedule-with-weather/raw/main/demo/weahter_and_schedule_demo_set_calendar.gif",
+				"alt": "demo of calendar api setting process"
+			},
+			{
+				"url": "https://github.com/Ellie-Yen/schedule-with-weather/raw/main/demo/weather_and_schedule_demo_set_weather.gif",
+				"alt": "demo of weather api setting process"
+			}
+		],
+		"links": {
+			"live": "https://ellie-yen.github.io/schedule-with-weather/",
+			"code": "https://github.com/Ellie-Yen/schedule-with-weather"
+		},
+		"tags": [
+			"weather-api", "google-calendar-api",
+			"styled-components", "typescript", "reactjs", "rwd"
+		],
+		"intro": "A web app allows you to arrange your weekly events based on weather forecast. This website combined the weather api (3-day/ week forecast) and google calendar api together. You could provide Google API key and Google Calendar ID to fetch your data, and the website will not remember/ use all these data. You can toggle on 使用展示範例 in calendar source setting to preview the example if you don't have Google API key or don't want to use it."
+	},
+  {
+		"name": "Text counter",
+		"photos": [
+			{
+				"url": "https://github.com/Ellie-Yen/Text-Counter/raw/master/demo/text_counter_demo_desktop.png",
+				"alt": "demo on desktop, bright mode"
+			},
+			{
+				"url": "https://github.com/Ellie-Yen/Text-Counter/raw/master/demo/text-counter_demo(iPhone%206_7_8%20Plus).png",
+				"alt": "demo on mobile(iphone), dark mode"
+			},
+			{
+				"url": "https://github.com/Ellie-Yen/Text-Counter/raw/master/demo/text_counter_demo.gif",
+				"alt": "demo of operating process"
+			}
+		],
+		"links": {
+			"live": "https://ellie-yen.github.io/Text-Counter/",
+			"code": "https://github.com/Ellie-Yen/Text-Counter"
+		},
+		"tags": [
+			"text-editor", "reactjs", "dark-theme", "rwd"
+		],
+		"intro": "This text counter allow you to set restriction of words and decide whether symbols, enter(newline) and space should be counted. The overflow contents will be highlighten. Editing would become easier and flexible."
+	},
+	{
+		"name": "My portfolio",
+		"photos": [
+			{
+				"url": "https://github.com/Ellie-Yen/Ellie-Yen.github.io/raw/master/demo/demo_cover_(Nest Hub).png",
+				"alt": "cover by nest hub"
+			}
+		],
+		"links": {
+			"live": "https://ellie-yen.github.io/",
+			"code": "https://github.com/Ellie-Yen/Ellie-Yen.github.io"
+		},
+		"tags": [
+			"IntersectionObserver", "scroll-effect", "lazy-load", "typography", "google-font",
+			"styled-components", "typescript", "reactjs", "web-pack", "rwd"
+		],
+		"intro": "My portfolio with abundant interacting effects by typographical design. Here you are :D"
+	}
+]

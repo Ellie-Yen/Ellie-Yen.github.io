@@ -1,0 +1,21 @@
+{
+	"title": {
+		"regular": [
+			"Let me", "team."
+		],
+		"special": [
+			"join", "your"
+		]
+	},
+  "subtitle": "Please feel free to contact me :D",
+	"links": [
+		{
+			"name": "CakeResume",
+			"url": "https://www.cakeresume.com/ellieyen"
+		},
+		{
+			"name": "email me",
+			"url": "mailto:e.yen.career@gmail.com"
+		}
+	]
+}

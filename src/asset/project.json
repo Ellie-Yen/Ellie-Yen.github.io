@@ -1,0 +1,28 @@
+{
+  "title": {
+		"regular": [
+			"how", "I", "my", "."
+		],
+		"special": [
+			"Enjoy", "built", "projects"
+		]
+  },
+  "content": [
+    {
+      "title": "web",
+      "url": "web"
+    },
+    {
+      "title": "Python",
+      "url": "python"
+    },
+    {
+      "title": "C%23",
+      "url": "csharp"
+    }
+  ],
+  "link_title": {
+    "live": "live",
+    "code": "code"
+  }
+}

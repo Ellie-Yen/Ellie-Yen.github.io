@@ -1,0 +1,34 @@
+[
+	{
+		"name": "Conway's Game of life",
+		"photos": [
+			{
+				"url": "https://github.com/Ellie-Yen/Python-Conway-game/raw/main/demo_conway_game.gif",
+				"alt": "visualize of the playing process"
+			}
+		],
+		"links": {
+			"code": "https://github.com/Ellie-Yen/Python-Conway-game"
+		},
+		"tags": [
+			"numpy", "game"
+		],
+		"intro": "Consider the infinite space, instead of showing fixed scope that contains empty rows/ cols or not includes all live cells, the program is able to show all live cells in the minimum scope."
+	},
+	{
+		"name": "tic tac toe game",
+		"photos": [
+			{
+				"url": "https://github.com/Ellie-Yen/Python-Tic-Tac-Toe-Game/raw/main/demo_tic_tac_toe.gif",
+				"alt": "real playing process"
+			}
+		],
+		"links": {
+			"code": "https://github.com/Ellie-Yen/Python-Tic-Tac-Toe-Game"
+		},
+		"tags": [
+			"bitwise operation", "asynchronous", "recursion", "game"
+		],
+		"intro": "An interactive game. The user can challenge the computer with 3 levels: easy, mid and master, and free to choose the play order and chess used. User is also available to end the game at any time. It would automatically compute who wins the game this time and restart the game if the player wants to play again. Once the player ends it, a statistic of how many games the player has won / lose / draw would show up on the screen."
+	}
+]
